@@ -4,14 +4,14 @@ import {PieChart, Pie, Legend, Cell} from 'recharts'
 import './index.css'
 
 const VaccinationByAge = props => {
-  const {VaccinationByAgeDetails} = props
+  const {vaccinationByAgeDetails} = props
 
   return (
     <div className="vaccination-by-age-container">
       <h1 className="vaccination-by-age-heading">Vaccination by age</h1>
       <PieChart width={1000} height={300}>
         <Pie
-          data={VaccinationByAgeDetails}
+          data={vaccinationByAgeDetails}
           cx="50%"
           cy="30%"
           outerRadius="60%"
